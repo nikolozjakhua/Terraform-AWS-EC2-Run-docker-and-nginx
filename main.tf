@@ -1,9 +1,3 @@
-provider "aws" {
-    region = var.access_keys.region
-    access_key = var.access_keys.access_key
-    secret_key = var.access_keys.secret_key
-}
-
 resource "aws_vpc" "myapp-vpc" {
     cidr_block = var.vpc_cidr_block
     tags = {
@@ -105,6 +99,3 @@ resource "aws_instance" "myapp-server" {
     }
 }
 
-output "my-public-ip" {
-    value = aws_instance.myapp-server.public_ip
-}
