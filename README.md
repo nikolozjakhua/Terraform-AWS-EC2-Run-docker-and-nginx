@@ -1,1 +1,1 @@
-Automate AWS Infrastructure with Terraform
+Automate AWS Infrastructure Provision with Terraform
